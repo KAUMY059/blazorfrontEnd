@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventEase - Blazor App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to EventEase</h1>
+        <nav>
+            <ul>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-card">
+            <img src="event1.jpg" alt="Event 1">
+            <h3>Event Name</h3>
+            <p>Date: July 15, 2025</p>
+            <p>Location: Sydney</p>
+            <button onclick="registerEvent()">Register</button>
+        </div>
+    </section>
+
+    <section id="register">
+        <h2>Register for an Event</h2>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 EventEase</p>
+    </footer>
+</body>
+</html>
